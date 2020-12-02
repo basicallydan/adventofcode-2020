@@ -43,3 +43,28 @@ func NumberOfValidPasswords(policiesAndPasswords []string) int {
   }
 	return numValid
 }
+
+func NewPolicyNumberOfValidPasswords(policiesAndPasswords []string) int {
+  numValid := 0
+  for _, policyAndPassword := range policiesAndPasswords {
+    numMatches := 0
+    parsedItem := ParsePasswordItem(policyAndPassword)
+    regexString := parsedItem.character
+    regex := *regexp.MustCompile(regexString)
+    allIndexes := regex.FindAllStringIndex(parsedItem.password, -1)
+    for _, v := range allIndexes {
+      if v[1] == parsedItem.min || v[1] == parsedItem.max {
+        numMatches += 1
+      }
+
+      if (numMatches > 1) {
+        break
+      }
+    }
+
+    if (numMatches == 1) {
+      numValid += 1
+    }
+  }
+	return numValid
+}

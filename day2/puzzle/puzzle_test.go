@@ -22,3 +22,15 @@ func TestNumberOfValidPasswordsSecondInput(t *testing.T) {
   var output = NumberOfValidPasswords(input[:])
   assert.Equal(t, 1, output)
 }
+
+func TestNewPolicyNumberOfValidPasswordsFirstInput(t *testing.T) {
+  var input = [3]string{"1-3 a: abcde","1-3 b: cdefg","2-9 d: dcccccccc"}
+  var output = NewPolicyNumberOfValidPasswords(input[:])
+  assert.Equal(t, 1, output)
+}
+
+func TestNewPolicyNumberOfValidPasswordsSecondInput(t *testing.T) {
+  var input = [5]string{"6-14 c: cpcccgcddfzcgcccc","11-14 m: mmmmmmmmmmmmmmmkmmm","2-4 h: vhthh","1-8 h: hbcdefgij","1-8 a: baaaaaab"}
+  var output = NewPolicyNumberOfValidPasswords(input[:])
+  assert.Equal(t, 2, output)
+}
