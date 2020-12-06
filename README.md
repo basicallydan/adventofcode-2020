@@ -27,3 +27,11 @@ I should probably build a file reader at some point.
 Today I decided to do "is it valid" first - then do the calculation as a separate test. I did this at lunchtime, and managed to get part 1 done no problem.
 
 My work day is finished now and I'm not sure I have time - I have some house chores to do tonight and I am kinda beat from work. We'll see!
+
+### [Day 5](https://adventofcode.com/2020/day/5)
+
+This was a fun one! It was tricky to work out how to get the missing seat but as is so often the key to the solution, I sorted the array and it became easy.
+
+### Day 6
+
+Starting this now. I think using a set will be the way. But this is Go, there are no sets. Google is my friend...
