@@ -32,6 +32,8 @@ My work day is finished now and I'm not sure I have time - I have some house cho
 
 This was a fun one! It was tricky to work out how to get the missing seat but as is so often the key to the solution, I sorted the array and it became easy.
 
-### Day 6
+### [Day 6](https://adventofcode.com/2020/day/6)
 
 Starting this now. I think using a set will be the way. But this is Go, there are no sets. Google is my friend...
+
+I enjoyed that one a lot. Super fun. I almost did a really complicated solution for part 2 when I realised I could simply start with the total number of possible unanimous yesses then subtract whenever someone deviated from the norm!
