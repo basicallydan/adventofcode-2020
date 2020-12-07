@@ -37,3 +37,12 @@ This was a fun one! It was tricky to work out how to get the missing seat but as
 Starting this now. I think using a set will be the way. But this is Go, there are no sets. Google is my friend...
 
 I enjoyed that one a lot. Super fun. I almost did a really complicated solution for part 2 when I realised I could simply start with the total number of possible unanimous yesses then subtract whenever someone deviated from the norm!
+
+### [Day 7](https://adventofcode.com/2020/day/7)
+
+Just started this this morning. I have made some progress but I need to get to work for the day. Ideally I want to create a network, such as BLUE -> RED -> GOLD and ORANGE -> RED -> GOLD etc, and and essentially just pick out all the bags which don't eventually lead to a GOLD leaf node. But my strategy thus far has been:
+
+* Figure out all the bags that can directly hold gold bags
+* Go through the list and see if any of the bags that can't hold gold bags can hold bags that can hold gold bags
+
+Might try and do the network idea instead.
